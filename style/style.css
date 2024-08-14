@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: Roboto;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.card img {
+  border-radius: 50%;
+  width: 100px;
+}
+.card h2 {
+  font-size: 24px;
+  font-family: Roboto;
+}
+.card p {
+  font-size: 14px;
+  color: #777;
+  font-weight: 600;
+}
+.card .social-icons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .social-icons a {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  color: #333;
+  background-color: white;
+  text-decoration: none;
+}
+.card .social-icons a:hover {
+  background-color: #00a1ff;
+  color: #fff;
+}
