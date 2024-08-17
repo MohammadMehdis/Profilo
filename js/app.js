@@ -1,18 +1,18 @@
 "use strict";
 async function userRender() {
   const answer = await fetch("https://jsonplaceholder.typicode.com/users");
-  const data = await answer.json();
+  const hubData = await answer.json();
   const container = document.getElementById("user-cards");
-  console.log(data);
+  console.log(hubData);
 
-  data.forEach((user) => {
+  hubData.forEach((user) => {
     const cardContainer = document.createElement("div");
     cardContainer.classList.add("card-container");
 
     const userCard = document.createElement("div");
     userCard.classList.add("card");
     userCard.innerHTML = `
-        <img src="https://i.pravatar.cc/150?img=${user.id}" alt="User Avatar">
+        <img src="https://i.pravatar.cc/150?img=${user.id}">
         <h2>${user.name}</h2>
         <p>Username: ${user.username}</p>
         <p>Email:${user.email}</p>
